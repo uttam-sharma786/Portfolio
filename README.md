@@ -59,3 +59,6 @@ Benefit of astrojs
 
 What is meaning Headless
 A Headless system mean we can use the entire backend system like that wordpress but we don't have to use the front-end output
+
+
+https://blog.openreplay.com/building-an-astro-website-with-wordpress-as-a-headless-cms/
