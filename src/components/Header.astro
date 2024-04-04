@@ -1,56 +1,66 @@
 ---
-import type {Component } from "solid-js";
+import type { Component } from "solid-js";
 import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
 import Footer from "../components/Footer.astro";
 import Skill from "../components/Skill";
-
-
-
-
-
 ---
 
+<div class="container mx-auto bg-stone-900 p-[5%]">
+  <nav
+    class="flex justify-center bg-zinc-700 rounded-full mb-[5%] py-2 px-4 sm:py-4 sm:px-6"
+  >
+    <a href="/." class="text-white px-4 py-2">Home</a>
+    <a href="/about" class="text-white px-4 py-2">About</a>
+    <a href="#" class="text-white px-4 py-2">Services</a>
+    <a href="#" class="text-white px-4 py-2">Contact</a>
+  </nav>
 
-<div class = "container mx-auto   bg-stone-900 p-[5%]  ">
-    <div class="hidden sm:ml-6 sm:block px-2 py-2 bg-slate-800 mb-2 items-right  space-x-10">
-        <div class=" flex flex-row text-white text-sm font-bold font-sans  rounded-full hover:underline-offset-8 ">
-            <a href="/." class="rounded-md px-3 py-2 t" aria-current="page">Home</a>
-            <a href="/about" class="rounded-md px-3 py-2">About Us</a>
-            <a href="/Project" class="rounded-md px-3 py-2">Project</a>
-        </div>
-    </div>
-    
-    <img src="./public/uttam.jpg" class="w-20 h-20 mr-2 inline rounded-full mb-10" />
-    <h1 class="text-2xl text-justify indent-* text-white ">
-        Software designer, founder, and amateur astronaut.
+  <img
+    src="./public/uttam.jpg"
+    class="w-20 h-20 mr-2 inline rounded-full mb-10"
+  />
+  <div class="text-left">
+    <h1 class="text-2xl indent-* text-white">
+      Software designer, founder, and .
     </h1>
-    <h3 class="text-white indent-*">
-        I’m Spencer, a software designer and entrepreneur based in New York City. 
-        I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.
-    </h3>
-    
-    <div class=" container mx-auto flex gap-x-2 mt-3">
-        <a href="https://www.linkedin.com/in/uttamsha/" target="_blank">
-            <img src="./public/linkedin.png" class="w-10 h-10 mr-2 inline rounded-full mb-10" />
-        </a>
-        <a href="https://github.com/uttam-sharma786" target="_blank">
-        <img src="./public/github.png" class="w-10 h-10 mr-2 inline rounded-full mb-10" />
-        </a>
+    <p class="text-white indent-*">
+      Hi, I'm Uttam Sharma live in India.... &nbsp;
+    </p>
+    <p class="text-white indent-*">
+      Startup enthusiast, working in an early-stage for development & Product
+      scaling
+    </p>
+
+    <div class="flex gap-x-2 mt-3">
+      <a href="https://www.linkedin.com/in/uttamsha/" target="_blank">
+        <img
+          src="./public/linkedin.png"
+          class="w-10 h-10 mr-2 inline rounded-full mb-10"
+        />
+      </a>
+      <a href="https://github.com/uttam-sharma786" target="_blank">
+        <img
+          src="./public/github.png"
+          class="w-10 h-10 mr-2 inline rounded-full mb-10"
+        />
+      </a>
+
+      <button
+        class="bg-zinc-500 hover:bg-blue-700 text-white font-bold py-0.4 px-0.3 rounded inline-flex items-center"
+        >Downlaod CV</button
+      >
     </div>
-    <Skill />
+  </div>
+  <Skill />
 
-    
-   
-   
-   
+  <div class="card mt-20">
+    <h2>
+      Crafting a design system for a multiplanetary future September 5, 2022
+      Most companies try to stay ahead of the curve when it comes to visual
+      design, but for Planetaria we needed to create a brand that would still
+      inspire us 100 years from now when humanity has spread across our entire
+      solar system.
+    </h2>
+  </div>
 </div>
-
-<!-- <header class="flex  bg-white mb-8 ">
-    <nav class="nav-links hidden sm:ml-6 sm:block ">
-        <HeaderLink href="/">About</HeaderLink>
-        <HeaderLink href="/about">Project</HeaderLink>
-        <HeaderLink href="/">Contact </HeaderLink>
-    </nav>
-    
-</header> -->
