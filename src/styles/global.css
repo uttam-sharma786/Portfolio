@@ -1,3 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:"Lato";
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("/fonts/Lato-Regular.ttf") format("truetype")
+}
+
 @font-face {
     font-family: 'Atkinson';
     src: url('/fonts/atkinson-regular.woff') format('woff');
@@ -24,9 +41,6 @@ body {
 	
 }
 
-@media (max-width: 720px) {
-    body {
-        font-size: 18px;
-    }
-   
+@media (max-height: 500px) {
+    
 }
