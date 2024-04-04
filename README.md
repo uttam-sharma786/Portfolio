@@ -45,3 +45,20 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+
+
+
+Astro is a Static Site Generator (SSG).It means it can output a static HTML website
+Benefit of astrojs
+1. SEO Foused
+2. Bring any framework
+3. Making components render at right time
+4. Rounting is very extended
+
+What is meaning Headless
+A Headless system mean we can use the entire backend system like that wordpress but we don't have to use the front-end output
+
+
+https://blog.openreplay.com/building-an-astro-website-with-wordpress-as-a-headless-cms/
