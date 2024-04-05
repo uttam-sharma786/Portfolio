@@ -4,30 +4,23 @@ import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
 import Footer from "../components/Footer.astro";
 import Skill from "../components/Skill";
+import Navbar from "../components/Navbar";
 ---
 
-<div class="container mx-auto bg-stone-900 p-[5%]">
-  <nav
-    class="flex justify-center bg-zinc-700 rounded-full mb-[5%] py-2 px-4 sm:py-4 sm:px-6"
-  >
-    <a href="/." class="text-white px-4 py-2">Home</a>
-    <a href="/about" class="text-white px-4 py-2">About</a>
-    <a href="#" class="text-white px-4 py-2">Services</a>
-    <a href="#" class="text-white px-4 py-2">Contact</a>
-  </nav>
-
+<div class="container mx-auto bg-stone-900 p-[2%]">
+  <Navbar />
   <img
     src="./public/uttam.jpg"
     class="w-20 h-20 mr-2 inline rounded-full mb-10"
   />
   <div class="text-left">
-    <h1 class="text-2xl indent-* text-white">
-      Software designer, founder, and .
+    <h1 class="text-2xl indent-* text-gray-300">
+      Software designer, founder, and developer.
     </h1>
-    <p class="text-white indent-*">
+    <p class="text-lg font-semibold text-gray-400">
       Hi, I'm Uttam Sharma live in India.... &nbsp;
     </p>
-    <p class="text-white indent-*">
+    <p class="text-base text-gray-400">
       Startup enthusiast, working in an early-stage for development & Product
       scaling
     </p>
@@ -47,7 +40,7 @@ import Skill from "../components/Skill";
       </a>
 
       <button
-        class="bg-zinc-500 hover:bg-blue-700 text-white font-bold py-0.4 px-0.3 rounded inline-flex items-center"
+        class="bg-zinc-800 mb-11 space-x-1 space-y-2 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded inline-flex items-center backdrop-filter backdrop-blur-lg bg-opacity-30"
         >Downlaod CV</button
       >
     </div>
