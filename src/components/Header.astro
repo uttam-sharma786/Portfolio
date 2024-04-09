@@ -2,16 +2,16 @@
 import type { Component } from "solid-js";
 import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
-import Footer from "../components/Footer.astro";
+import Footer from "./Footer";
 import Skill from "../components/Skill";
 import Navbar from "../components/Navbar";
 ---
 
-<div class="container mx-auto bg-stone-900 p-[2%]">
+<div class="bg-cover h-screen bg-stone-900 p-[2%]">
   <Navbar />
   <img
     src="./public/uttam.jpg"
-    class="w-20 h-20 mr-2 inline rounded-full mb-10"
+    class="w-20 h-20 mr-2 inline rounded-full mb-6"
   />
   <div class="text-left">
     <h1 class="text-2xl indent-* text-gray-300">
@@ -47,35 +47,5 @@ import Navbar from "../components/Navbar";
   </div>
   <Skill />
 
-  <div class="container max-w-3xl item-center px-1 sm:px-3 lg:px-4 mt-10">
-    <h1 class="w-8 h-8 flex text-cyan-500">Wraptron</h1>
-    <p class="text-slate-400 backdrop-opacity-10">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
-      integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
-      turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-      adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
-    </p>
-  </div>
-
-  <div class="container max-w-3xl item-center px-1 sm:px-3 lg:px-4 mt-4">
-    <h1 class="w-8 h-8 flex text-cyan-500">Wraptron</h1>
-    <p class="text-slate-400">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
-      integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
-      turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-      adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
-    </p>
-  </div>
-  <div class="container max-w-3xl item-center px-1 sm:px-3 lg:px-4 mt-4">
-    <h1 class="w-8 h-8 flex text-cyan-500">Wraptron</h1>
-    <p class="text-slate-400">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
-      integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
-      turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-      adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
-    </p>
-  </div>
+  <Footer />
 </div>
