@@ -3,7 +3,7 @@ import type { Component } from "solid-js";
 
 const Skill: Component = () => {
     return (
-    <div class="container mx-auto bg-zinc-700 px-6 sm:px-12 py-8 sm:py-16 rounded-md backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <div class="container mx-auto bg-zinc-700 px-6 sm:px-12 py-8 sm:py-16 rounded-md backdrop-filter backdrop-blur-lg bg-opacity-30 mt-50">
   <ul class="flex flex-row sm:flex-row justify-center items-center gap-6">
     <li class="flex justify-center">
       <img src="/public/Tailwind_CSS_Logo.svg.png" alt="Tailwind" class="max-h-20 w-full object-contain" />
