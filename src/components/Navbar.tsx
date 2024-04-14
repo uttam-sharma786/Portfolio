@@ -16,7 +16,7 @@ const Navbar: Component = () => {
             <a href="/." class="text-white px-4 py-2 md:inline">Home</a>
             <a href="/about" class="text-white px-4 py-2 md:inline">About</a>
             <a href="#" class="text-white px-4 py-2  md:inline">Pojects</a>
-            <a href="#" class="text-white px-4 py-2 md:inline">Blogs    </a>
+            <a href="/" class="text-white px-4 py-2 md:inline">Blogs </a>
 
         </nav>
      
