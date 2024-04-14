@@ -1,29 +1,47 @@
 ---
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 ---
 
-<div
-  class="bg-cover h-screen grid bg-orange-300 sm:grid-cols-2 gap-8 items-center"
->
-  <div>
-    <img
-      src="/public/uttam.jpg"
-      class="w-[30%] h-auto md:float-right md:mr-8"
-    />
-  </div>
-  <div>
-    <h1 class="text-pretty">
-      I'm Spencer Sharp. I live in New York City, where I design the future.
-    </h1>
-    <p class="indent-8">
-      I've loved making things for as long as I can remember, and wrote my first
-      program when I was 6 years old, just two weeks after my mom brought home
-      the brand new Macintosh LC 550 that I taught myself to type on. The only
-      thing I loved more than computers as a kid was space. When I was 8, I
-      climbed the 40-foot oak tree at the back of our yard while wearing my
-      older sister's motorcycle helmet, counted down from three, and jumped —
-      hoping the tree was tall enough that with just a bit of momentum I'd be
-      able to get to orbit. I spent the next few summers indoors working on a
-    </p>
-  </div>
+<div class="w-full h-screen bg-stone-900 space-x-20">
+  <Navbar />
+  <main class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 py-8 mt-20">
+    <section>
+      <h2 class="section-title text-white text-4xl sm:text-6xl">
+        I'm Uttam Sharma. I live in Chennai City, where I developer the future.
+      </h2>
+      <div class="content text-white mt-6">
+        <p class="text-base">
+          I've loved making things for as long as I can remember, and wrote my
+          first program when I was 6 years old, just two weeks after my mom
+          brought home the brand new Macintosh LC 550 that I taught myself to
+          type on.
+        </p>
+        <p class="text-2xl mt-3">
+          The only thing I loved more than computers as a kid was space. When I
+          was 8, I climbed the 40-foot oak tree at the back of our yard while
+          wearing my older sister's motorcycle helmet, counted down from three,
+          and jumped — hoping the tree was tall enough that with just a bit of
+          momentum I'd be able to get to orbit.
+        </p>
+        <p class="text-2xl mt-3 border-2 border-white px-4 py-4">
+          I spent the next few summers indoors working on a rocket design, while
+          I recovered from the multiple surgeries it took to fix my badly broken
+          legs. It took nine iterations, but when I was 15 I sent my dad's
+          Blackberry into orbit and was able to transmit a photo back down to
+          our family computer from space
+        </p>
+      </div>
+    </section>
+    <div class="flex justify-center items-center">
+      <img
+        width="500"
+        height="500"
+        src="/public/uttam.jpg"
+        alt="Uttam Sharma at work with a colleague"
+        class="mt-5 px-5"
+      />
+    </div>
+  </main>
+  <Footer />
 </div>
