@@ -2,13 +2,17 @@
 import type { CollectionEntry, CollectionKey } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.asto.asto";
 
-type Props = CollectionEntry<"Home">["data"];
-
-const { title, description, heroImage } = Astro.props;
+export interface Props {
+  title: string;
+  description: string;
+  heroImage: string;
+}
+const { title, description, heroImage } = Astro.props as Props;
 ---
 
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />

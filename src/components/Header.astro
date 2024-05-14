@@ -1,9 +1,8 @@
 ---
-import type { Component } from "solid-js";
 import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
-import Footer from "./Footer";
-import Skill from "../components/Skill";
+import Footer from "./Footer.astro";
+import Skill from "./Logo.astro";
 import Navbar from "../components/Navbar";
 ---
 
@@ -17,10 +16,10 @@ import Navbar from "../components/Navbar";
     <h1 class="text-2xl indent-* text-gray-300">
       Software designer, founder, and developer.
     </h1>
-    <p class="text-lg font-semibold text-gray-400">
-      Hi, I'm Uttam Sharma live in India.... &nbsp;
+    <p class="text-lg font-semibold text-slate-200">
+      Hi, I'm Uttam Sharma live in India &nbsp;
     </p>
-    <p class="text-base text-gray-400">
+    <p class="text-lg text-slate-200 max-w-xl">
       Startup enthusiast, working in an early-stage for development & Product
       scaling
     </p>
@@ -47,12 +46,14 @@ import Navbar from "../components/Navbar";
   </div>
   <Skill />
 
-  <div class="grid sm:grid-cols-2 justify-normal items-center mt-20 text-white">
-    <div class="w-full sm:w-2/3 mr-8">
+  <div
+    class="grid sm:grid-cols-2 justify-normal items-center mt-20 text-slate-200"
+  >
+    <div class="w-full sm:w-2/3 mr-8 text-slate-200">
       <h1 class="text-lg lg:text-2xl">
         Crafting a design system for a multiplanetary future
       </h1>
-      <p class="text-xl text-pretty text-neutral-400">
+      <p class="text-xl text-pretty text-slate-400">
         Most companies try to stay ahead of the curve when it comes to visual
         design, but for Planetaria we needed to create a brand that would still
         inspire us 100 years from now when humanity has spread across our entire
@@ -70,10 +71,10 @@ import Navbar from "../components/Navbar";
       <button>Join</button>
     </div>
     <div class="w-full sm:w-2/3 mr-8 mt-10">
-      <h1 class="text-2xl text-black">
+      <h1 class="text-2xl text-slate-200">
         Crafting a design system for a multiplanetary future
       </h1>
-      <p class="text-black">
+      <p class="text-slate-400">
         Most companies try to stay ahead of the curve when it comes to visual
         design, but for Planetaria we needed to create a brand that would still
         inspire us 100 years from now when humanity has spread across our entire
@@ -89,10 +90,10 @@ import Navbar from "../components/Navbar";
       </ul>
     </div>
     <div class="w-full sm:w-2/3 mr-8 mt-10">
-      <h1 class="text-2xl text-black">
+      <h1 class="text-2xl text-slate-200">
         Crafting a design system for a multiplanetary future
       </h1>
-      <p class="text-black">
+      <p class="text-slate-400">
         Most companies try to stay ahead of the curve when it comes to visual
         design, but for Planetaria we needed to create a brand that would still
         inspire us 100 years from now when humanity has spread across our entire
@@ -101,11 +102,12 @@ import Navbar from "../components/Navbar";
     </div>
     <div class="w-full sm:w-1/2 bg-zinc-700 p-6 rounded-lg mt-10">
       <h2 class="text-xl mb-4">Work</h2>
-      <ul>
-        <li>Wraptron - 2019 June</li>
-        <li>Bisr</li>
-        <li>Cadd</li>
-      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        eaque, ipsa officia magnam adipisci similique? Totam sequi quia
+        provident, tempore ducimus natus reiciendis saepe unde sint rerum
+        similique recusandae tenetur?
+      </p>
     </div>
   </div>
 

@@ -1,0 +1,16 @@
+---
+export interface Props {
+  body: string;
+}
+
+const { body } = Astro.props as Props;
+---
+
+<li class="Link-card">
+  <h2>
+    <span>&rarr;</span>
+  </h2>
+  <p>
+    {body}
+  </p>
+</li>

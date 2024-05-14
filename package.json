@@ -14,7 +14,11 @@
     "@astrojs/solid-js": "^4.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.5.12",
+    "astro-seo": "^0.8.3",
     "solid-js": "^1.8.16",
     "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "astro-icon": "^1.1.0"
   }
 }

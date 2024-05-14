@@ -1,20 +1,20 @@
 ---
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.astro";
 ---
 
-<div class="w-full h-screen bg-stone-900 space-x-20">
+<div class="w-full h-screen bg-stone-900">
   <Navbar />
   <main class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 py-8 mt-20">
     <section>
       <img
-        src="./public/uttam.jpg"
+        src="/public/uttam.jpg"
         class="w-22 md:w-30 h-22 md:h-40 mr-2 inline rounded-full mb-6"
       />
-      <h2 class="section-title text-white text-4xl sm:text-6xl">
+      <h3 class="section-title text-slate-200 text-4xl sm:text-6xl">
         I'm Uttam Sharma. I live in Chennai City, where I developer the future.
-      </h2>
-      <div class="content text-white mt-6">
+      </h3>
+      <div class="content text- mt-6 text-slate-200">
         <p class="text-base">
           I've loved making things for as long as I can remember, and wrote my
           first program when I was 6 years old, just two weeks after my mom
@@ -39,13 +39,14 @@ import Footer from "../components/Footer";
     </section>
     <div class="flex justify-center items-center">
       <img
-        width="500"
-        height="500"
-        src="/public/uttam.jpg"
+        width={500}
+        height={500}
+        src="/public/hero.png"
         alt="Uttam Sharma at work with a colleague"
-        class="mt-5 px-5"
+        class="mt-5 px-5 w-ful rounded-md transition group-hover:-translate-y-1 group-hover:shadow-xl aspect-square"
       />
     </div>
+    &nbsp;
   </main>
   <Footer />
 </div>

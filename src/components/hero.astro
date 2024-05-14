@@ -1,0 +1,18 @@
+---
+import { Picutre } from "astro:assets";
+import heroImage from "../../public/hero.png";
+---
+
+<main
+  class="gird lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+>
+  <div class="py-6 md:order-1 hidden md:block">
+    <picture
+      src={heroImage}
+      alt="Develoer in the air"
+      width={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading:"eager"
+      format="avif"></picture>
+  </div>
+</main>
